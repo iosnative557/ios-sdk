@@ -8,7 +8,7 @@ separately installed Swift toolchain.
 
 | Directory | Xcode | iOS SDK | Swift |
 |---|---|---|---|
-| [`27/`](27) | 27.0 (27A266a) | 27.0 | 6.4.0 |
+| [`27/`](27) | 27.1 | 27.1 | 6.4.0 |
 
 
 ## Use
@@ -17,11 +17,9 @@ separately installed Swift toolchain.
    `sdk/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk`.
 2. Unzip `toolchain.zip` into its own directory, e.g. `toolchain/`, which gives
    `toolchain/usr/lib/swift/...` and `toolchain/usr/lib/clang/...`.
-3. Recreate the symbolic links. for example:
 
-   ```sh
-   python3 -c "import json,os;[os.path.lexists(p) or os.symlink(t,p) for p,t in json.load(open('.LinkPatch.json')).items()]"
-   ```
+Use `unzip` on macOS or Linux: the zips store symbolic links as standard zip symlink entries,
+and `unzip` restores them.
 
 
 ## Make your own
