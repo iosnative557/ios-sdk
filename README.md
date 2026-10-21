@@ -8,7 +8,7 @@ separately installed Swift toolchain.
 
 | Directory | Xcode | iOS SDK | Swift |
 |---|---|---|---|
-| [`27/`](27) | 27.1 | 27.1 | 6.4.0 |
+| [`27.1/`](27.1) | 27.1 | 27.1 | 6.4.0 |
 
 
 ## Use
